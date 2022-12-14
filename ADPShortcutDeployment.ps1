@@ -1,5 +1,5 @@
 $file = "\\{domain}\NETLOGON\ADP\ADP Workforce Now.url"
-$dst = "\\si-fp01\users$\"
+$dst = "\\{server}\users$\"
 $folder = ""
 foreach ($item in Get-ChildItem($dst) -Directory)
 {
