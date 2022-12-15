@@ -1,0 +1,5 @@
+Set-ExecutionPolicy RemoteSigned
+$UserCredential = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://{server}/PowerShell/ -Authentication Kerberos -Credential $UserCredential
+Import-PSSession $Session -DisableNameChecking
+Set-Mailbox -Identity tscofield -Type Shared
