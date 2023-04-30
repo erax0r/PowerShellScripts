@@ -1,0 +1,17 @@
+# Get the list of printers
+$printers = Get-Printer
+
+# Get the list of printers to remove
+$removePrinters = @("Printer1", "Printer2")
+
+# Remove the printers from the list
+foreach ($printer in $printers) {
+    if ($removePrinters -contains $printer.Name) {
+        Remove-Printer -Name $printer
+    }
+}
+
+# Add the printers to the user's printers
+foreach ($printer in $removePrinters) {
+    Add-Printer -Name $printer
+}
