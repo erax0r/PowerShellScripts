@@ -11,7 +11,7 @@ $shellstream = New-SSHShellStream -SessionId $session.SessionId
 # Define the commands to run
 $commands = @(
     'enable',
-    'cisco', # Replace with the actual password or a secure method to pass it
+    'pw', # Replace with the actual password or a secure method to pass it
     'conf t',
     'interface gi1/0/2',
     'shut'
