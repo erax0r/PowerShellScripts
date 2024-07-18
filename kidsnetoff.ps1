@@ -1,7 +1,7 @@
 ﻿# Define your parameters
 $switchIP = '192.168.1.2'
 $username = 'admin'
-$password = 'cisco' | ConvertTo-SecureString -AsPlainText -Force
+$password = 'pw' | ConvertTo-SecureString -AsPlainText -Force
 $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $username, $password
 
 # Set up the SSH session
