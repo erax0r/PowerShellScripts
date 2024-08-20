@@ -1,6 +1,6 @@
 <#
     Name: 
-        Remove-MecmCach
+        Remove-MecmCache
 
     Constituent source files: 
         1. Remove-MecmCache.ps1
